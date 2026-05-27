@@ -4,7 +4,7 @@
   "description": "Premium Web & App Development Agency Website and Interactive Mockups",
   "main": "index.html",
   "scripts": {
-    "dev": "npx http-server -p 8081 -a 0.0.0.0"
+    "start": "npx http-server -p ${PORT:-8080} -a 0.0.0.0", "dev": "npx http-server -p 8081 -a 0.0.0.0"
   },
   "keywords": [],
   "author": "WebStar Studio",
