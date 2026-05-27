@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Step Lavender | Premium Shoe Store</title>
+  
+  <!-- Shared control styles -->
+  <link rel="stylesheet" href="../frame.css">
+  <!-- Shoe specific styles -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body data-mockup-name="Shoe Retailer">
+
+  <!-- Header -->
+  <header class="shoes-header">
+    <div class="shoes-top-bar">
+      <div class="shoes-container">
+        <span>Emergency Hotline: <a href="tel:7508990616">+91 75089 90616</a></span>
+        <span>WhatsApp: <a href="https://wa.me/917508990616">Chat Live</a></span>
+      </div>
+    </div>
+    <div class="shoes-main-nav">
+      <div class="shoes-container">
+        <a href="#" class="shoes-logo">STEP <span>LAVENDER</span></a>
+        <nav class="shoes-menu">
+          <a href="#">Home</a>
+          <a href="#catalog">Catalog</a>
+          <a href="#contact">Contact</a>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="shoes-hero">
+    <div class="shoes-container">
+      <div class="shoes-hero-wrapper">
+        <div class="shoes-hero-content">
+          <span class="shoes-badge">New Arrivals 2026</span>
+          <h2>Walk on Lavender Clouds</h2>
+          <p>Unrivaled support meets curated minimalist design. Experience the sweet lilac sneaker range engineered for ultimate luxury.</p>
+          <a href="#catalog" class="shoes-btn">Shop Collection</a>
+        </div>
+        <div class="shoes-hero-graphic">
+          <div class="shoes-graphic-circle"></div>
+          <!-- Shoe SVG graphic -->
+          <svg width="240" height="240" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M10 65C15 65 20 62 25 55C32 45 45 35 65 35C80 35 90 48 90 65H10Z" fill="white" stroke="hsl(265, 80%, 65%)" stroke-width="4" stroke-linejoin="round"/>
+            <path d="M50 35L42 18L32 20" stroke="hsl(265, 80%, 65%)" stroke-width="3" stroke-linecap="round"/>
+            <line x1="15" y1="65" x2="85" y2="65" stroke="hsl(265, 80%, 65%)" stroke-width="4"/>
+            <circle cx="50" cy="50" r="4" fill="hsl(265, 80%, 65%)"/>
+            <circle cx="60" cy="50" r="4" fill="hsl(265, 80%, 65%)"/>
+            <circle cx="70" cy="50" r="4" fill="hsl(265, 80%, 65%)"/>
+          </svg>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Catalog Section -->
+  <section id="catalog" class="catalog-section">
+    <div class="shoes-container">
+      
+      <div class="catalog-grid">
+        <!-- Sidebar filters -->
+        <aside class="catalog-sidebar">
+          
+          <!-- Search box -->
+          <div class="sidebar-widget">
+            <h3>Search Product</h3>
+            <input type="text" id="shoe-search-input" class="search-input" placeholder="Search sneakers...">
+          </div>
+
+          <!-- Color filter -->
+          <div class="sidebar-widget">
+            <h3>Filter by Color</h3>
+            <div class="filter-options">
+              <label class="filter-checkbox">
+                <input type="checkbox" name="color" value="Lavender" class="color-filter-chk">
+                <span class="custom-chk"></span> Lavender Accent
+              </label>
+              <label class="filter-checkbox">
+                <input type="checkbox" name="color" value="White" class="color-filter-chk">
+                <span class="custom-chk"></span> Crisp White
+              </label>
+              <label class="filter-checkbox">
+                <input type="checkbox" name="color" value="Gray" class="color-filter-chk">
+                <span class="custom-chk"></span> Dark Gray
+              </label>
+            </div>
+          </div>
+
+          <!-- Size filter -->
+          <div class="sidebar-widget">
+            <h3>Filter by Size</h3>
+            <div class="size-options">
+              <button class="size-btn" data-size="7">7</button>
+              <button class="size-btn" data-size="8">8</button>
+              <button class="size-btn" data-size="9">9</button>
+              <button class="size-btn" data-size="10">10</button>
+            </div>
+          </div>
+
+          <!-- Quick Contact Form -->
+          <div class="sidebar-widget contact-widget">
+            <h3>Store Inquiries</h3>
+            <form id="shoe-sidebar-form">
+              <input type="text" id="sh-name" placeholder="Your Name" required>
+              <input type="email" id="sh-email" placeholder="Your Email" required>
+              <textarea id="sh-msg" rows="3" placeholder="Size questions, custom order details..." required></textarea>
+              <button type="submit" class="shoes-btn" style="width:100%; font-size:0.8rem; padding:10px;">Send Webhook Inquiry</button>
+            </form>
+          </div>
+        </aside>
+
+        <!-- Product Listings -->
+        <main class="catalog-main">
+          <div class="catalog-meta">
+            <span id="product-count-display">Showing 6 Products</span>
+            <div class="sorting-controls">
+              <select id="sort-shoes-select">
+                <option value="default">Default Sorting</option>
+                <option value="price-low">Price: Low to High</option>
+                <option value="price-high">Price: High to Low</option>
+              </select>
+            </div>
+          </div>
+
+          <!-- Rendered dynamically -->
+          <div class="shoes-grid" id="shoes-products-grid"></div>
+        </main>
+      </div>
+    </div>
+  </section>
+
+  <!-- Shoes Footer -->
+  <footer class="shoes-footer">
+    <div class="shoes-container">
+      <div class="shoes-footer-top">
+        <a href="#" class="shoes-logo" style="color:white">STEP <span>LAVENDER</span></a>
+        <div class="shoes-footer-contacts">
+          <p>📞 Phone: <a href="tel:7508990616" style="color:var(--shoes-color-primary)">+91 75089 90616</a></p>
+          <p>💬 WhatsApp: <a href="https://wa.me/917508990616" style="color:var(--shoes-color-primary)">Chat Live</a></p>
+        </div>
+      </div>
+      <div class="shoes-footer-bottom">
+        <p>&copy; 2026 Step Lavender Retail. Powered by WebStar Studio. SSL Secure.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../frame.js"></script>
+  <script src="app.js"></script>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    const mockup = window.location.pathname.split('/').reverse()[1];
+    const images = {"boutique": ["https://images.unsplash.com/photo-1490481651871-ab68de25d43d?auto=format&fit=crop&w=1200&q=80", "https://images.unsplash.com/photo-1445205170230-053b83016050?auto=format&fit=crop&w=1200&q=80", "https://images.unsplash.com/photo-1572804013309-82a89141a5dc?auto=format&fit=crop&w=400&q=80", "https://images.unsplash.com/photo-1596755094514-f87e32f85e98?auto=format&fit=crop&w=400&q=80", "https://images.unsplash.com/photo-1594633312681-425c7b97ccd1?auto=format&fit=crop&w=400&q=80", "https://images.unsplash.com/photo-1539008835657-9e8e9680c956?auto=format&fit=crop&w=400&q=80", "https://images.unsplash.com/photo-1585487000160-6ebcfceb0d03?auto=format&fit=crop&w=400&q=80", "https://images.unsplash.com/photo-1591369822096-ffd140ec948f?auto=format&fit=crop&w=400&q=80"], "shoes": ["https://images.unsplash.com/photo-1511556532299-8f662fc26c06?auto=format&fit=crop&w=1200&q=80", "https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=400&q=80", "https://images.unsplash.com/photo-1600185365483-26d7a4cc7519?auto=format&fit=crop&w=400&q=80", "https://images.unsplash.com/photo-1525966222134-fcfa99b8ae77?auto=format&fit=crop&w=400&q=80", "https://images.unsplash.com/photo-1608231387042-66d1773070a5?auto=format&fit=crop&w=400&q=80", "https://images.unsplash.com/photo-1560769629-975ec94e6a86?auto=format&fit=crop&w=400&q=80", "https://images.unsplash.com/photo-1595950653106-6c9ebd614d3a?auto=format&fit=crop&w=400&q=80"], "perfume": ["https://images.unsplash.com/photo-1523293182086-7651a899d37f?auto=format&fit=crop&w=1200&q=80", "https://images.unsplash.com/photo-1588405748880-12d1d2a59f75?auto=format&fit=crop&w=400&q=80", "https://images.unsplash.com/photo-1590736969955-71cc94801759?auto=format&fit=crop&w=400&q=80", "https://images.unsplash.com/photo-1592945403244-b3fbafd7f539?auto=format&fit=crop&w=400&q=80", "https://images.unsplash.com/photo-1594035910387-fea47794261f?auto=format&fit=crop&w=400&q=80"], "corporate": ["https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=1200&q=80", "https://images.unsplash.com/photo-1600880292203-757bb62b4baf?auto=format&fit=crop&w=400&q=80", "https://images.unsplash.com/photo-1542744173-8e7e53415bb0?auto=format&fit=crop&w=400&q=80", "https://images.unsplash.com/photo-1556761175-5973dc0f32e7?auto=format&fit=crop&w=400&q=80", "https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=400&q=80"], "government": ["https://images.unsplash.com/photo-1523292562811-8fa7962a78c8?auto=format&fit=crop&w=1200&q=80", "https://images.unsplash.com/photo-1580128660010-fdcb27678f28?auto=format&fit=crop&w=400&q=80", "https://images.unsplash.com/photo-1582213782179-e0d53f98f2ca?auto=format&fit=crop&w=400&q=80", "https://images.unsplash.com/photo-1577495508048-b635879837f1?auto=format&fit=crop&w=400&q=80"]};
+    
+    if (images[mockup]) {
+        let imgs = images[mockup];
+        let i = 0;
+        
+        // Try to replace hero background
+        const heroes = document.querySelectorAll('.boutique-slide, .shoes-hero-wrapper, .perfume-hero, .corporate-hero, .gov-hero');
+        heroes.forEach(h => {
+            if(i < imgs.length) {
+                h.style.background = `url('${imgs[i]}') center/cover no-repeat`;
+                i++;
+            }
+        });
+
+        // Replace graphic elements instead of background for some layouts
+        const heroGraphics = document.querySelectorAll('.shoes-hero-graphic svg, .shoes-graphic-circle');
+        heroGraphics.forEach(hg => hg.style.display = 'none');
+        const heroGraphicContainers = document.querySelectorAll('.shoes-hero-graphic');
+        heroGraphicContainers.forEach(hc => {
+            if(i < imgs.length) {
+                hc.style.background = `url('${imgs[i-1]}') center/cover no-repeat`; // use same hero image
+                hc.style.borderRadius = '12px';
+            }
+        });
+
+        // Replace product/category images
+        const cards = document.querySelectorAll('.category-img, .product-img, .service-img, .dept-img');
+        cards.forEach(card => {
+            if(i < imgs.length) {
+                card.style.background = `url('${imgs[i]}') center/cover no-repeat`;
+                card.innerHTML = ''; // clear emoji or text
+                i++;
+            }
+        });
+    }
+});
+</script>
+
+</body>
+</html>

@@ -1,0 +1,133 @@
+/* Shared Mockup Demo Header & Responsive Frame styles */
+
+#webstar-demo-frame {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 54px;
+  background: #ffffff;
+  border-bottom: 1px solid #e2e8f0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  z-index: 10000;
+  font-family: 'Outfit', sans-serif;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.03);
+}
+
+.demo-frame-logo {
+  font-weight: 800;
+  font-size: 1.1rem;
+  color: #1e1e24;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.demo-frame-logo span {
+  color: hsl(265, 80%, 62%);
+}
+
+.demo-frame-title {
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: #718096;
+  background: #f7fafc;
+  padding: 4px 12px;
+  border-radius: 9999px;
+  border: 1px solid #edf2f7;
+}
+
+.demo-frame-controls {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.demo-device-btn {
+  background: #f7fafc;
+  border: 1px solid #edf2f7;
+  padding: 6px 12px;
+  border-radius: 6px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  color: #4a5568;
+  transition: all 0.2s ease;
+}
+
+.demo-device-btn:hover {
+  background: #edf2f7;
+}
+
+.demo-device-btn.active {
+  background: hsl(265, 80%, 96%);
+  border-color: hsl(265, 80%, 80%);
+  color: hsl(265, 80%, 62%);
+}
+
+.demo-frame-exit {
+  background: hsl(265, 80%, 62%);
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 9999px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.demo-frame-exit:hover {
+  background: hsl(265, 80%, 55%);
+  transform: translateY(-1px);
+}
+
+/* Adjust page content when demo frame is present */
+body.demo-view {
+  padding-top: 54px;
+  background-color: #f7fafc;
+  transition: background-color 0.3s ease;
+}
+
+/* Mobile Simulation Mode */
+body.demo-view.mobile-mode {
+  background-color: #718096;
+}
+
+body.demo-view.mobile-mode #webstar-demo-frame {
+  background: #ffffff;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+body.demo-view.mobile-mode .mockup-content-wrapper {
+  max-width: 390px;
+  height: 800px;
+  margin: 40px auto;
+  border: 12px solid #2d3748;
+  border-radius: 40px;
+  background: #ffffff;
+  box-shadow: 0 25px 60px rgba(0,0,0,0.3);
+  overflow-y: auto;
+  overflow-x: hidden;
+  position: relative;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Hide scrollbar for mobile frame container */
+body.demo-view.mobile-mode .mockup-content-wrapper::-webkit-scrollbar {
+  width: 4px;
+}
+
+body.demo-view.mobile-mode .mockup-content-wrapper::-webkit-scrollbar-thumb {
+  background: rgba(0,0,0,0.15);
+  border-radius: 10px;
+}

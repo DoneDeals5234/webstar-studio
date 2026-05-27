@@ -1,0 +1,746 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="WebStar Studio - Ultra-Premium Software Agency. Custom websites, native Android apps, and automated workflows engineered for elite digital growth.">
+  <meta name="keywords" content="webstar studio, digital agency, custom website development, android app development, n8n automation, figma design">
+  <title>WebStar Studio | Building Premium Digital Experiences</title>
+  
+  <link rel="icon" type="image/png" href="logo.png">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- 1. Luxury Loader Splash -->
+  <div id="loader-screen">
+    <div class="loader-logo" style="display:flex; align-items:center; flex-direction:column;">
+      <img src="logo.png" alt="WebStar Studio" style="height: 60px; margin-bottom: 12px; border-radius: 4px;">
+      <div>WebStar <span>Studio</span><div class="logo-dot"></div></div>
+    </div>
+    <div class="loader-spinner"></div>
+  </div>
+
+  <!-- 2. Scroll Progress Bar -->
+  <div id="scroll-progress"></div>
+
+  <!-- 3. Cursor Glow Effect -->
+  <div class="cursor-glow" id="custom-cursor-glow"></div>
+
+  <!-- Background Blur Blobs -->
+  <div class="blur-blobs-container">
+    <div class="blur-blob blob-1"></div>
+    <div class="blur-blob blob-2"></div>
+    <div class="blur-blob blob-3"></div>
+  </div>
+
+  <!-- 4. Sticky Floating Navbar -->
+  <header class="sticky-header" id="navbar">
+    <div class="nav-container">
+      <a href="#" class="logo" style="display:flex; align-items:center;">
+        <img src="logo.png" alt="WebStar Studio" style="height: 40px; margin-right: 8px; border-radius: 4px;">
+        WebStar <span>Studio</span><div class="logo-dot"></div>
+      </a>
+      <nav class="main-nav">
+        <a href="#home">Home</a>
+        <a href="#services">Services</a>
+        <a href="#portfolio">Mockups</a>
+        <a href="#automation">Automation</a>
+        <a href="#why-us">Why Us</a>
+        <a href="#faq">FAQ</a>
+      </nav>
+      <div class="nav-actions">
+        <a href="#appointment" class="btn btn-primary btn-sm">Book Consultation</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- 5. Hero Section -->
+  <section id="home" class="hero">
+    <div class="container">
+      <div class="hero-grid">
+        <div class="hero-left">
+          <span class="sec-tag">Modern Digital Engineering</span>
+          <h1>Building Digital Experiences That <span>Grow Businesses</span></h1>
+          <p>We create premium websites, powerful Android apps, intelligent automation systems, and modern business solutions for ambitious brands.</p>
+          <div class="hero-buttons-row">
+            <a href="#appointment" class="btn btn-primary">Start Your Project</a>
+            <a href="#portfolio" class="btn btn-secondary">View Portfolio</a>
+          </div>
+        </div>
+        
+        <!-- Floating UI mockups -->
+        <div class="hero-right">
+          <div class="hero-mock-wrapper">
+            <!-- 1. Website Dashboard -->
+            <div class="mock-card mock-dashboard glass-card">
+              <div class="dashboard-head-mock">
+                <span></span><span></span><span></span>
+              </div>
+              <h5 style="font-size:0.75rem; margin-bottom:8px; color:var(--color-text-muted);">Conversion metrics</h5>
+              <div style="font-size:1.2rem; font-weight:800; color:var(--color-primary); margin-bottom:12px;">+184.2%</div>
+              <div class="dashboard-bars-mock">
+                <div style="width: 90%;"></div>
+                <div style="width: 70%;"></div>
+                <div style="width: 85%;"></div>
+              </div>
+            </div>
+            <!-- 2. Mobile App -->
+            <div class="mock-card mock-app">
+              <div class="mock-app-head"></div>
+              <p style="font-size:0.6rem; color:#a0aec0; text-transform:uppercase; margin-bottom:10px;">Push Alert</p>
+              <div class="mock-app-msg">📥 Order Verification Successful!</div>
+              <div class="mock-app-msg">🚀 Webhook Fired to WhatsApp</div>
+              <div style="height:30px; border-radius:15px; background:var(--color-primary); margin-top:20px; font-size:0.6rem; display:flex; justify-content:center; align-items:center; font-weight:bold;">Launch System</div>
+            </div>
+            <!-- 3. Glass Card -->
+            <div class="mock-card mock-glass">
+              <h5>Leads Dispatched</h5>
+              <span>2,854</span>
+              <p style="font-size:0.6rem; color:var(--color-text-muted); margin-top:8px;">Twilio Gateway Active</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 6. Trust Section -->
+  <section class="trust-section">
+    <div class="container">
+      <div class="trust-grid">
+        <div class="trust-item">
+          <h3 data-target="100">0</h3>
+          <p>Projects Audited</p>
+        </div>
+        <div class="trust-item">
+          <h3 data-target="99">0</h3>
+          <p>Uptime Percentage</p>
+        </div>
+        <div class="trust-item">
+          <h3 data-target="24">0</h3>
+          <p>Hour Support Desk</p>
+        </div>
+        <div class="trust-item">
+          <h3 data-target="10">0</h3>
+          <p>Supported Stacks</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 7. Services Section -->
+  <section id="services">
+    <div class="container">
+      <div class="sec-title-wrap">
+        <span class="sec-tag">Expertise</span>
+        <h2>High-End Business Services</h2>
+      </div>
+
+      <div class="services-grid">
+        <!-- Service 1 -->
+        <div class="service-card glass-card">
+          <div class="service-icon">💻</div>
+          <h3>Website Development</h3>
+          <p>Pixel-perfect, Stripe-grade web applications designed to load instantly and rank on Google Search grids.</p>
+          <ul class="service-bullets">
+            <li>Responsive layouts & Fast loading</li>
+            <li>Custom dashboard interfaces</li>
+            <li>Google Analytics integrations</li>
+          </ul>
+          <a href="#appointment" class="btn btn-secondary btn-sm">Enquire Details</a>
+        </div>
+
+        <!-- Service 2 -->
+        <div class="service-card glass-card">
+          <div class="service-icon">📱</div>
+          <h3>Android App Development</h3>
+          <p>Native Flutter apps configured with real-time Firebase databases, OTP verification, and push messaging.</p>
+          <ul class="service-bullets">
+            <li>OTP Login & Payments</li>
+            <li>Push alerts setup</li>
+            <li>Google Play Console publishing</li>
+          </ul>
+          <a href="#appointment" class="btn btn-secondary btn-sm">Enquire Details</a>
+        </div>
+
+        <!-- Service 3 -->
+        <div class="service-card glass-card">
+          <div class="service-icon">🎨</div>
+          <h3>UI/UX Premium Design</h3>
+          <p>Spacious, modern Figma interfaces emphasizing luxury branding, whitespace, and clear interactive pathways.</p>
+          <ul class="service-bullets">
+            <li>Custom UI design templates</li>
+            <li>Interactive prototyping</li>
+            <li>Responsive grid mappings</li>
+          </ul>
+          <a href="#appointment" class="btn btn-secondary btn-sm">Enquire Details</a>
+        </div>
+
+        <!-- Service 4 -->
+        <div class="service-card glass-card">
+          <div class="service-icon">📈</div>
+          <h3>SEO Optimization</h3>
+          <p>Custom Schema, meta tags injection, fast page caching audits, and immediate Google Search indexing workflows.</p>
+          <ul class="service-bullets">
+            <li>Structured Google Schema</li>
+            <li>Performance speed tuning</li>
+            <li>Sitemap submissions</li>
+          </ul>
+          <a href="#appointment" class="btn btn-secondary btn-sm">Enquire Details</a>
+        </div>
+
+        <!-- Service 5 -->
+        <div class="service-card glass-card">
+          <div class="service-icon">💬</div>
+          <h3>WhatsApp Automation</h3>
+          <p>Deploy Twilio and CF7 integrations that capture form submits and dispatch message updates to clients' chats.</p>
+          <ul class="service-bullets">
+            <li>Autoreplies & CRM worklinks</li>
+            <li>Interactive chat triggers</li>
+            <li>Secure template messaging</li>
+          </ul>
+          <a href="#appointment" class="btn btn-secondary btn-sm">Enquire Details</a>
+        </div>
+
+        <!-- Service 6 -->
+        <div class="service-card glass-card">
+          <div class="service-icon">⚡</div>
+          <h3>n8n / Zapier Automations</h3>
+          <p>Connect invoices, email notifications, leads tables, and marketing alerts in an uninterrupted automated cycle.</p>
+          <ul class="service-bullets">
+            <li>CRM webhook connections</li>
+            <li>Automatic emails responders</li>
+            <li>Cross-platform database sync</li>
+          </ul>
+          <a href="#appointment" class="btn btn-secondary btn-sm">Enquire Details</a>
+        </div>
+
+        <!-- Service 7 -->
+        <div class="service-card glass-card" style="grid-column: 1/-1; max-width: 600px; margin: 0 auto;">
+          <div class="service-icon">📊</div>
+          <h3>Admin Dashboard Systems</h3>
+          <p>High-end administrative terminals detailing inventory tracking, sales ratios, user profiles, and active API log feeds.</p>
+          <ul class="service-bullets">
+            <li>CSV reports exportable</li>
+            <li>Real-time telemetry counters</li>
+            <li>Role permissions levels</li>
+          </ul>
+          <a href="#appointment" class="btn btn-secondary btn-sm" style="width:100%; justify-content:center;">Build Custom Dashboard</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 8. Premium Process Section -->
+  <section class="process-section">
+    <div class="container">
+      <div class="sec-title-wrap">
+        <span class="sec-tag">Execution Workflow</span>
+        <h2>How We Deliver Excellence</h2>
+      </div>
+
+      <div class="process-grid">
+        <div class="process-step-card">
+          <div class="step-number">1</div>
+          <h3>Discovery & Plan</h3>
+          <p>Analysing blueprints and mapping milestones.</p>
+        </div>
+        <div class="process-step-card">
+          <div class="step-number">2</div>
+          <h3>UI/UX Design</h3>
+          <p>Figma wireframes highlighting brand feel.</p>
+        </div>
+        <div class="process-step-card">
+          <div class="step-number">3</div>
+          <h3>Development</h3>
+          <p>Writing responsive, secure system codes.</p>
+        </div>
+        <div class="process-step-card">
+          <div class="step-number">4</div>
+          <h3>System Testing</h3>
+          <p>Debugging SSL caching and API responses.</p>
+        </div>
+        <div class="process-step-card">
+          <div class="step-number">5</div>
+          <h3>Launch Support</h3>
+          <p>Deploying domain, CDN, and monthly updates.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 9. Portfolio & Website Mockups Section -->
+  <section id="portfolio">
+    <div class="container">
+      <div class="sec-title-wrap">
+        <span class="sec-tag">Portfolio Mockups</span>
+        <h2>Hand-crafted Client Demos</h2>
+        <p>Launch live demo nodes to inspect premium layouts, custom size filters, translation options, and government portals.</p>
+      </div>
+
+      <div class="portfolio-grid">
+        <!-- Mockup 1: Clothing Boutique -->
+        <div class="portfolio-card glass-card">
+          <div class="portfolio-visual" style="background: url('mockups/images/boutique_mockup.png') center/cover no-repeat;">
+            <div class="portfolio-visual-overlay">
+              <a href="mockups/boutique/index.html" class="btn btn-primary">Launch Live Demo</a>
+            </div>
+          </div>
+          <div class="portfolio-info">
+            <h3>Clothing Boutique Store</h3>
+            <p>Elegant design template with collection carousels, custom appointment triggers, and luxury white-and-lavender grids.</p>
+          </div>
+        </div>
+
+        <!-- Mockup 2: Shoe Store -->
+        <div class="portfolio-card glass-card">
+          <div class="portfolio-visual" style="background: url('mockups/images/sneaker_mockup.png') center/cover no-repeat;">
+            <div class="portfolio-visual-overlay">
+              <a href="mockups/shoes/index.html" class="btn btn-primary">Launch Live Demo</a>
+            </div>
+          </div>
+          <div class="portfolio-info">
+            <h3>Modern Sneaker Retailer</h3>
+            <p>Features active client-side catalog searching, color checkboxes, shoe sizing selectors, and quick inquiry logs.</p>
+          </div>
+        </div>
+
+        <!-- Mockup 3: Perfume Brand -->
+        <div class="portfolio-card glass-card">
+          <div class="portfolio-visual" style="background: url('mockups/images/perfume_mockup.png') center/cover no-repeat;">
+            <div class="portfolio-visual-overlay">
+              <a href="mockups/perfume/index.html" class="btn btn-primary">Launch Live Demo</a>
+            </div>
+          </div>
+          <div class="portfolio-info">
+            <h3>Luxury Fragrance Boutique</h3>
+            <p>Premium Cormorant Garamond headings, Best Seller carousels, sample request forms, and transparent blur sticky navs.</p>
+          </div>
+        </div>
+
+        <!-- Mockup 4: Corporate Website -->
+        <div class="portfolio-card glass-card">
+          <div class="portfolio-visual" style="background: url('mockups/images/corporate_mockup.png') center/cover no-repeat;">
+            <div class="portfolio-visual-overlay">
+              <a href="mockups/corporate/index.html" class="btn btn-primary">Launch Live Demo</a>
+            </div>
+          </div>
+          <div class="portfolio-info">
+            <h3>Corporate Solutions Platform</h3>
+            <p>Corporate layout showcasing statistics counting animations, capabilities grids, client reviews, and direct calling hooks.</p>
+          </div>
+        </div>
+
+        <!-- Mockup 5: Gov Department -->
+        <div class="portfolio-card glass-card">
+          <div class="portfolio-visual" style="background: url('mockups/images/government_mockup.png') center/cover no-repeat;">
+            <div class="portfolio-visual-overlay">
+              <a href="mockups/government/index.html" class="btn btn-primary">Launch Live Demo</a>
+            </div>
+          </div>
+          <div class="portfolio-info">
+            <h3>Indian Government Portal</h3>
+            <p>Accessible GIGW portal: Hindi/English language toggles, high-contrast theme layout, emergency lines, and public grievance logs.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 10. App Mockups Section -->
+  <section class="app-mockups-section">
+    <div class="container">
+      <div class="sec-title-wrap">
+        <span class="sec-tag">Mobile Layouts</span>
+        <h2>Android Systems Showcases</h2>
+      </div>
+
+      <div class="apps-grid">
+        <!-- App 1 -->
+        <div class="app-phone-card glass-card">
+          <div class="phone-casing">
+            <div class="phone-casing-notch"></div>
+            <div class="phone-inner-screen" style="background: url('mockups/images/courier_app.png') center/cover no-repeat; padding: 0;">
+            </div>
+          </div>
+          <h3>Real-Time Delivery</h3>
+          <p style="font-size:0.8rem; color:var(--color-text-muted);">Sync courier coordinates to client admin terminals.</p>
+        </div>
+
+        <!-- App 2 -->
+        <div class="app-phone-card glass-card">
+          <div class="phone-casing">
+            <div class="phone-casing-notch"></div>
+            <div class="phone-inner-screen" style="background: url('mockups/images/food_app.jpg') center/cover no-repeat; padding: 0;">
+            </div>
+          </div>
+          <h3>Food Ordering Portal</h3>
+          <p style="font-size:0.8rem; color:var(--color-text-muted);">Custom menu cards with instant UPI integrations.</p>
+        </div>
+
+        <!-- App 3 -->
+        <div class="app-phone-card glass-card">
+          <div class="phone-casing">
+            <div class="phone-casing-notch"></div>
+            <div class="phone-inner-screen" style="background: url('mockups/images/doctor_app.jpg') center/cover no-repeat; padding: 0;">
+            </div>
+          </div>
+          <h3>Appoint Scheduler</h3>
+          <p style="font-size:0.8rem; color:var(--color-text-muted);">Connect slots verification to client's WhatsApp.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 11. Automation Showcase Diagram -->
+  <section id="automation" class="automation-section">
+    <div class="container">
+      <div class="sec-title-wrap">
+        <span class="sec-tag">Workflows</span>
+        <h2>WhatsApp Automation Pipelines</h2>
+        <p>We connect form structures to webhook APIs mapping dispatches to company receiver numbers.</p>
+      </div>
+
+      <div class="pipeline-diagram">
+        <div class="pipeline-nodes-row">
+          <div class="pipeline-node">
+            <h4>Form Submitted</h4>
+            <span>Portal capture</span>
+          </div>
+          <div class="pipeline-node">
+            <h4>Webhook Triggered</h4>
+            <span>n8n / Zapier</span>
+          </div>
+          <div class="pipeline-node">
+            <h4>WhatsApp Send</h4>
+            <span>Twilio API</span>
+          </div>
+          <div class="pipeline-node">
+            <h4>Lead Logged</h4>
+            <span>Dashboard synced</span>
+          </div>
+        </div>
+        <div class="pipeline-flow-line">
+          <div class="pipeline-flow-dot"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 12. Why Choose Us -->
+  <section id="why-us" class="why-us-section">
+    <div class="container">
+      <div class="sec-title-wrap">
+        <span class="sec-tag">Why Choose Us</span>
+        <h2>Comparative Standards</h2>
+      </div>
+
+      <div class="choose-grid">
+        <div class="choose-card glass-card">
+          <h3>Fast System Loading</h3>
+          <p>We compile semantic HTML layouts and optimize styles configurations targeting page load speeds below 2.5 seconds.</p>
+        </div>
+        <div class="choose-card glass-card">
+          <h3>Premium UI Assets</h3>
+          <p>Every interface utilizes tailored Outfit fonts, generous whitespaces, and smooth ambient animations to match modern tech styles.</p>
+        </div>
+        <div class="choose-card glass-card">
+          <h3>Scalable Cloud Tech</h3>
+          <p>We build backends on stable Node.js, Firebase, and Supabase systems to support heavy traffic counts safely.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 13. Technology Stack Carousel -->
+  <section class="tech-stack-section">
+    <div class="container">
+      <div class="sec-title-wrap">
+        <span class="sec-tag">Technologies</span>
+        <h2>Our Core Tech Stack</h2>
+      </div>
+      
+      <div class="tech-wall">
+        <div class="tech-carousel">
+          <div class="tech-icon-card glass-card">⚛️ React</div>
+          <div class="tech-icon-card glass-card">⚡ Next.js</div>
+          <div class="tech-icon-card glass-card">📱 Flutter</div>
+          <div class="tech-icon-card glass-card">🔥 Firebase</div>
+          <div class="tech-icon-card glass-card">🟢 Node.js</div>
+          <div class="tech-icon-card glass-card">🎨 Figma</div>
+          <div class="tech-icon-card glass-card">📦 Supabase</div>
+          <div class="tech-icon-card glass-card">⚙️ n8n</div>
+          <div class="tech-icon-card glass-card">🔌 Zapier</div>
+          <!-- Repeat items to loop seamlessly -->
+          <div class="tech-icon-card glass-card">⚛️ React</div>
+          <div class="tech-icon-card glass-card">⚡ Next.js</div>
+          <div class="tech-icon-card glass-card">📱 Flutter</div>
+          <div class="tech-icon-card glass-card">🔥 Firebase</div>
+          <div class="tech-icon-card glass-card">🟢 Node.js</div>
+          <div class="tech-icon-card glass-card">🎨 Figma</div>
+          <div class="tech-icon-card glass-card">📦 Supabase</div>
+          <div class="tech-icon-card glass-card">⚙️ n8n</div>
+          <div class="tech-icon-card glass-card">🔌 Zapier</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 14. Testimonial Section -->
+  <section class="testimonials-section">
+    <div class="container">
+      <div class="sec-title-wrap">
+        <span class="sec-tag">Testimonials</span>
+        <h2>Client Reviews</h2>
+      </div>
+
+      <div class="test-slider-wrapper">
+        <div class="test-slider-inner">
+          <!-- Card 1 -->
+          <div class="test-card glass-card">
+            <div class="test-rating">⭐⭐⭐⭐⭐</div>
+            <p>"WebStar Studio completely transformed our fashion shop conversions. The WhatsApp scheduling tools are flawless."</p>
+            <div class="test-client-profile">
+              <div class="test-client-avatar">AA</div>
+              <div class="test-client-details">
+                <h4>Aditi Arora</h4>
+                <span>Vogue Lilac Owner</span>
+              </div>
+            </div>
+          </div>
+          <!-- Card 2 -->
+          <div class="test-card glass-card">
+            <div class="test-rating">⭐⭐⭐⭐⭐</div>
+            <p>"The custom admin console lets us verify inventory items, review sales traces, and trace webhook configurations easily."</p>
+            <div class="test-client-profile">
+              <div class="test-client-avatar">NK</div>
+              <div class="test-client-details">
+                <h4>Naman Kapoor</h4>
+                <span>Step Luxury CEO</span>
+              </div>
+            </div>
+          </div>
+          <!-- Card 3 -->
+          <div class="test-card glass-card">
+            <div class="test-rating">⭐⭐⭐⭐⭐</div>
+            <p>"Elite design aesthetics! The Cormorant perfume layout feels extremely expensive and matches our corporate mandate."</p>
+            <div class="test-client-profile">
+              <div class="test-client-avatar">VS</div>
+              <div class="test-client-details">
+                <h4>Vikram Singh</h4>
+                <span>Apex Consulting Board</span>
+              </div>
+            </div>
+          </div>
+          <!-- Repeat for loop -->
+          <div class="test-card glass-card">
+            <div class="test-rating">⭐⭐⭐⭐⭐</div>
+            <p>"WebStar Studio completely transformed our fashion shop conversions. The WhatsApp scheduling tools are flawless."</p>
+            <div class="test-client-profile">
+              <div class="test-client-avatar">AA</div>
+              <div class="test-client-details">
+                <h4>Aditi Arora</h4>
+                <span>Vogue Lilac Owner</span>
+              </div>
+            </div>
+          </div>
+          <div class="test-card glass-card">
+            <div class="test-rating">⭐⭐⭐⭐⭐</div>
+            <p>"The custom admin console lets us verify inventory items, review sales traces, and trace webhook configurations easily."</p>
+            <div class="test-client-profile">
+              <div class="test-client-avatar">NK</div>
+              <div class="test-client-details">
+                <h4>Naman Kapoor</h4>
+                <span>Step Luxury CEO</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 15. Accordion FAQ Section -->
+  <section id="faq" class="faq-section">
+    <div class="container">
+      <div class="sec-title-wrap">
+        <span class="sec-tag">FAQ</span>
+        <h2>Common Inquiries</h2>
+      </div>
+
+      <div class="faq-accordion">
+        <!-- FAQ 1 -->
+        <div class="faq-item">
+          <button class="faq-question">How much does a website cost?</button>
+          <div class="faq-answer">
+            <p>Every website cost depends on layout complexity and API integrations. Custom responsive portals begin around ₹1K, including domain, SSL configurations, and Cloudflare setup support.</p>
+          </div>
+        </div>
+        <!-- FAQ 2 -->
+        <div class="faq-item">
+          <button class="faq-question">How long does development take?</button>
+          <div class="faq-answer">
+            <p>Bespoke corporate landers take 2-3 weeks. Detailed e-commerce portals or cross-platform Android mobile apps take 4-6 weeks to compile, test, and release.</p>
+          </div>
+        </div>
+        <!-- FAQ 3 -->
+        <div class="faq-item">
+          <button class="faq-question">Do you provide long-term support?</button>
+          <div class="faq-answer">
+            <p>Yes. Our maintenance support packages include secure database daily backups, uptime monitoring checkpoints, and instant Priority WhatsApp messaging assistance.</p>
+          </div>
+        </div>
+        <!-- FAQ 4 -->
+        <div class="faq-item">
+          <button class="faq-question">Can you build Android apps?</button>
+          <div class="faq-answer">
+            <p>Yes. We engineer secure Android applications using Flutter and Firebase databases, incorporating payments processing, OTP logins, and push alerting systems.</p>
+          </div>
+        </div>
+        <!-- FAQ 5 -->
+        <div class="faq-item">
+          <button class="faq-question">Do you provide automation systems?</button>
+          <div class="faq-answer">
+            <p>Yes. We connect customer forms to Twilio, n8n, and Zapier pipelines. Whenever a customer submits details, notifications are routed to your phone number instantly.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 16. Project Request Form Section -->
+  <section id="appointment" class="project-form-section">
+    <div class="container">
+      <div class="sec-title-wrap">
+        <span class="sec-tag">Contact Form</span>
+        <h2>Consult Our Engineers</h2>
+        <p>Provide project specifications below to calculate budget scopes. Submitting details opens WhatsApp directly.</p>
+      </div>
+
+      <div class="project-form-card glass-card">
+        <form id="project-request-form">
+          <div class="form-grid">
+            <div class="form-group">
+              <label for="req-name">Your Full Name</label>
+              <input type="text" id="req-name" placeholder="John Doe" required>
+            </div>
+            <div class="form-group">
+              <label for="req-business">Business Name</label>
+              <input type="text" id="req-business" placeholder="Company Ltd" required>
+            </div>
+            <div class="form-group">
+              <label for="req-email">Email Address</label>
+              <input type="email" id="req-email" placeholder="john@domain.com" required>
+            </div>
+            <div class="form-group">
+              <label for="req-phone">Phone Number</label>
+              <input type="text" id="req-phone" placeholder="7508990616" required>
+            </div>
+            <div class="form-group">
+              <label for="req-service">Service Required</label>
+              <select id="req-service" required>
+                <option value="Custom Website Design">Custom Website Design</option>
+                <option value="Android App Development">Android App Development</option>
+                <option value="Figma UI/UX Design System">Figma UI/UX Design System</option>
+                <option value="WhatsApp Automation Setup">WhatsApp Automation Setup</option>
+                <option value="Full Systems Audit">Full Systems Audit</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="req-budget">Project Budget</label>
+              <select id="req-budget" required>
+                <option value="₹1K - ₹10K">₹1K - ₹10K</option>
+                <option value="₹10K - ₹40K">₹10K - ₹40K</option>
+                <option value="₹40K - ₹80K">₹40K - ₹80K</option>
+                <option value="Above ₹80K">Above ₹80K</option>
+              </select>
+            </div>
+            <div class="form-group-full">
+              <label for="req-desc">Project Details</label>
+              <textarea id="req-desc" rows="4" placeholder="Briefly describe key sections and goals..." required></textarea>
+            </div>
+            <div class="form-group-full">
+              <label for="req-time">Preferred Meeting Time</label>
+              <input type="datetime-local" id="req-time" required>
+            </div>
+          </div>
+          
+          <button type="submit" class="btn btn-primary" style="width: 100%; justify-content: center;">
+            🚀 Submit Details & Verify via WhatsApp
+          </button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Success Popup Modal -->
+  <div class="success-modal" id="success-modal">
+    <div class="success-modal-card glass-card">
+      <div class="success-check-icon">✓</div>
+      <h3>Inquiry Details Prepared!</h3>
+      <p style="margin: 12px 0 24px 0; font-size:0.9rem;">We are redirecting you to WhatsApp to securely dispatch details to our development desk...</p>
+      <button class="btn btn-primary" id="btn-close-modal">Continue to WhatsApp</button>
+    </div>
+  </div>
+
+  <!-- 17. Footer -->
+  <footer class="corp-footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-col" style="max-width: 320px;">
+          <a href="#" class="logo" style="color:white; display:flex; align-items:center;">
+            <img src="logo.png" alt="WebStar Studio" style="height: 40px; margin-right: 8px; border-radius: 4px;">
+            WebStar <span>Studio</span><div class="logo-dot"></div>
+          </a>
+          <p style="font-size:0.85rem; margin-top:20px; color:#a0aec0;">High-end digital software engineering studio. We build custom websites, native Android platforms, and webhook automation flows.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Legal</h4>
+          <ul>
+            <li><a href="privacy.html">Privacy Policy</a></li>
+            <li><a href="terms.html">Terms & Conditions</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Studio Services</h4>
+          <ul>
+            <li><a href="#services">Website Engineering</a></li>
+            <li><a href="#services">Android Systems Dev</a></li>
+            <li><a href="#services">Premium UI/UX Mockups</a></li>
+            <li><a href="#services">WhatsApp automations</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Mockup Portals</h4>
+          <ul>
+            <li><a href="mockups/boutique/index.html">Clothing Boutique</a></li>
+            <li><a href="mockups/shoes/index.html">Sneaker Store</a></li>
+            <li><a href="mockups/perfume/index.html">Fragrance Shop</a></li>
+            <li><a href="mockups/corporate/index.html">Corporate Consulting</a></li>
+            <li><a href="mockups/government/index.html">Government Portal</a></li>
+          </ul>
+        </div>
+        <div class="footer-col footer-newsletter">
+          <h4>Newsletter Capture</h4>
+          <form id="footer-news-form">
+            <input type="email" placeholder="Your email address" required>
+            <button type="submit" class="btn btn-primary btn-sm">Subscribe</button>
+          </form>
+        </div>
+      </div>
+      
+      <div class="footer-bottom">
+        <p>&copy; 2026 WebStar Studio. SSL Inspected. Powered by Cloudflare CDN.</p>
+        <div style="display:flex; gap:16px;">
+          <a href="tel:7508990616">Call Us</a>
+          <a href="mailto:pv173597@gmail.com">Email Us</a>
+          <a href="https://wa.me/917508990616">WhatsApp</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>

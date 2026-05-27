@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Apex Lavender Consulting | Professional Solutions</title>
+  
+  <!-- Shared control styles -->
+  <link rel="stylesheet" href="../frame.css">
+  <!-- Corporate specific styles -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body data-mockup-name="Corporate Professional">
+
+  <!-- Header -->
+  <header class="corp-header">
+    <div class="corp-container">
+      <a href="#" class="corp-logo">APEX <span>LAVENDER</span></a>
+      <nav class="corp-nav">
+        <a href="#">Overview</a>
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#appointment">Book Consultation</a>
+      </nav>
+      <div class="corp-header-actions">
+        <!-- Call Button -->
+        <a href="tel:7508990616" class="corp-btn corp-btn-sm corp-btn-outline">
+          📞 Call Us
+        </a>
+        <!-- WhatsApp -->
+        <a href="https://wa.me/917508990616" target="_blank" class="corp-btn corp-btn-sm">
+          💬 WhatsApp
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="corp-hero">
+    <div class="corp-container">
+      <div class="corp-hero-content">
+        <span class="corp-tag">Innovation & Strategy</span>
+        <h1>Empowering Your Business Operations</h1>
+        <p>Apex Lavender brings premium consulting solutions, operational designs, and automation audits to help modern enterprises scale efficiently.</p>
+        <div class="corp-hero-buttons">
+          <a href="#appointment" class="corp-btn">Schedule Audits</a>
+          <a href="#services" class="corp-btn corp-btn-outline">Our Capabilities</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Stats Grid Banner -->
+  <section class="corp-stats-banner">
+    <div class="corp-container">
+      <div class="corp-stats-grid">
+        <div class="corp-stat-card">
+          <h3 class="stat-number" data-target="10">0</h3>
+          <p>Years Enterprise Consulting</p>
+        </div>
+        <div class="corp-stat-card">
+          <h3 class="stat-number" data-target="250">0</h3>
+          <p>Projects Audited & Scaled</p>
+        </div>
+        <div class="corp-stat-card">
+          <h3 class="stat-number" data-target="50">0</h3>
+          <p>Senior Consultants Team</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="corp-about">
+    <div class="corp-container">
+      <div class="corp-about-grid">
+        <div class="corp-about-text">
+          <span class="corp-tag">Our Mandate</span>
+          <h2>Who We Are</h2>
+          <p>We are a senior-led business advisory team focusing on operational workflows. We believe that incorporating elegant design layouts with high-performing, secure cloud backend systems turns complex corporate hurdles into seamless growth paths.</p>
+          <p>Our solutions project confidence. We use clean whitespace alongside gentle purple accents to build trust while highlighting modern forward-looking innovation.</p>
+        </div>
+        <div class="corp-about-graphic">
+          <div class="graphic-deco-lines"></div>
+          <div class="corp-about-quote">
+            <p>"Simplicity is the ultimate sophistication in enterprise automation."</p>
+            <span>- Apex Lavender Advisory Board</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services Grid -->
+  <section id="services" class="corp-services">
+    <div class="corp-container">
+      <div class="corp-section-title">
+        <span class="corp-tag">Expertise</span>
+        <h2>Consulting Verticals</h2>
+      </div>
+
+      <div class="corp-services-grid">
+        <div class="corp-service-card">
+          <div class="icon">📈</div>
+          <h3>Operational Strategy</h3>
+          <p>Reviewing workflow blockers, structuring resource roadmaps, and advising on tech stacks.</p>
+        </div>
+        <div class="corp-service-card">
+          <div class="icon">🔌</div>
+          <h3>System Integrations</h3>
+          <p>Mapping legacy architectures to automated cloud flows, including Twilio WhatsApp alerts.</p>
+        </div>
+        <div class="corp-service-card">
+          <div class="icon">🛡️</div>
+          <h3>SSL Security Auditing</h3>
+          <p>Performing vulnerabilities penetration checks and installing network traffic shields.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Booking Contact Form -->
+  <section id="appointment" class="corp-booking">
+    <div class="corp-container">
+      <div class="corp-booking-wrapper">
+        <div class="corp-booking-info">
+          <h2>Request a Business Consultation</h2>
+          <p>Schedule a 30-minute introductory call with our strategic team. We will review your current systems architecture, automation gaps, and provide basic recommendations.</p>
+          <div class="corp-quick-contacts">
+            <p>Direct Email: <a href="mailto:pv173597@gmail.com">pv173597@gmail.com</a></p>
+            <p>Hotline: <a href="tel:7508990616">+91 75089 90616</a></p>
+          </div>
+        </div>
+
+        <form id="corporate-booking-form" class="corp-form">
+          <div class="form-group-row">
+            <div class="corp-group">
+              <label for="c-name">Full Name</label>
+              <input type="text" id="c-name" placeholder="John Doe" required>
+            </div>
+            <div class="corp-group">
+              <label for="c-email">Corporate Email</label>
+              <input type="email" id="c-email" placeholder="name@company.com" required>
+            </div>
+          </div>
+          <div class="corp-group">
+            <label for="c-scope">Consultation Scope</label>
+            <select id="c-scope" required>
+              <option value="Workflow Auditing">Workflow & Automation Audit</option>
+              <option value="Cloud Integrations">Cloud API Integrations</option>
+              <option value="Security Penetration">SSL & Security Auditing</option>
+            </select>
+          </div>
+          <div class="corp-group">
+            <label for="c-msg">Message</label>
+            <textarea id="c-msg" rows="4" placeholder="Briefly describe your business systems bottlenecks..." required></textarea>
+          </div>
+          <button type="submit" class="corp-btn" style="width:100%;">Submit Inquiry & Notify WhatsApp</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="corp-footer">
+    <div class="corp-container">
+      <div class="corp-footer-wrapper">
+        <p>&copy; 2026 Apex Lavender Consulting. All rights reserved. SECURE CONNECTION.</p>
+        <div class="corp-footer-links">
+          <a href="tel:7508990616">Dialer hotline</a>
+          <a href="https://wa.me/917508990616">WhatsApp Channel</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../frame.js"></script>
+  <script src="app.js"></script>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    const mockup = window.location.pathname.split('/').reverse()[1];
+    const images = {"boutique": ["https://images.unsplash.com/photo-1490481651871-ab68de25d43d?auto=format&fit=crop&w=1200&q=80", "https://images.unsplash.com/photo-1445205170230-053b83016050?auto=format&fit=crop&w=1200&q=80", "https://images.unsplash.com/photo-1572804013309-82a89141a5dc?auto=format&fit=crop&w=400&q=80", "https://images.unsplash.com/photo-1596755094514-f87e32f85e98?auto=format&fit=crop&w=400&q=80", "https://images.unsplash.com/photo-1594633312681-425c7b97ccd1?auto=format&fit=crop&w=400&q=80", "https://images.unsplash.com/photo-1539008835657-9e8e9680c956?auto=format&fit=crop&w=400&q=80", "https://images.unsplash.com/photo-1585487000160-6ebcfceb0d03?auto=format&fit=crop&w=400&q=80", "https://images.unsplash.com/photo-1591369822096-ffd140ec948f?auto=format&fit=crop&w=400&q=80"], "shoes": ["https://images.unsplash.com/photo-1511556532299-8f662fc26c06?auto=format&fit=crop&w=1200&q=80", "https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=400&q=80", "https://images.unsplash.com/photo-1600185365483-26d7a4cc7519?auto=format&fit=crop&w=400&q=80", "https://images.unsplash.com/photo-1525966222134-fcfa99b8ae77?auto=format&fit=crop&w=400&q=80", "https://images.unsplash.com/photo-1608231387042-66d1773070a5?auto=format&fit=crop&w=400&q=80", "https://images.unsplash.com/photo-1560769629-975ec94e6a86?auto=format&fit=crop&w=400&q=80", "https://images.unsplash.com/photo-1595950653106-6c9ebd614d3a?auto=format&fit=crop&w=400&q=80"], "perfume": ["https://images.unsplash.com/photo-1523293182086-7651a899d37f?auto=format&fit=crop&w=1200&q=80", "https://images.unsplash.com/photo-1588405748880-12d1d2a59f75?auto=format&fit=crop&w=400&q=80", "https://images.unsplash.com/photo-1590736969955-71cc94801759?auto=format&fit=crop&w=400&q=80", "https://images.unsplash.com/photo-1592945403244-b3fbafd7f539?auto=format&fit=crop&w=400&q=80", "https://images.unsplash.com/photo-1594035910387-fea47794261f?auto=format&fit=crop&w=400&q=80"], "corporate": ["https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=1200&q=80", "https://images.unsplash.com/photo-1600880292203-757bb62b4baf?auto=format&fit=crop&w=400&q=80", "https://images.unsplash.com/photo-1542744173-8e7e53415bb0?auto=format&fit=crop&w=400&q=80", "https://images.unsplash.com/photo-1556761175-5973dc0f32e7?auto=format&fit=crop&w=400&q=80", "https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=400&q=80"], "government": ["https://images.unsplash.com/photo-1523292562811-8fa7962a78c8?auto=format&fit=crop&w=1200&q=80", "https://images.unsplash.com/photo-1580128660010-fdcb27678f28?auto=format&fit=crop&w=400&q=80", "https://images.unsplash.com/photo-1582213782179-e0d53f98f2ca?auto=format&fit=crop&w=400&q=80", "https://images.unsplash.com/photo-1577495508048-b635879837f1?auto=format&fit=crop&w=400&q=80"]};
+    
+    if (images[mockup]) {
+        let imgs = images[mockup];
+        let i = 0;
+        
+        // Try to replace hero background
+        const heroes = document.querySelectorAll('.boutique-slide, .shoes-hero-wrapper, .perfume-hero, .corporate-hero, .gov-hero');
+        heroes.forEach(h => {
+            if(i < imgs.length) {
+                h.style.background = `url('${imgs[i]}') center/cover no-repeat`;
+                i++;
+            }
+        });
+
+        // Replace graphic elements instead of background for some layouts
+        const heroGraphics = document.querySelectorAll('.shoes-hero-graphic svg, .shoes-graphic-circle');
+        heroGraphics.forEach(hg => hg.style.display = 'none');
+        const heroGraphicContainers = document.querySelectorAll('.shoes-hero-graphic');
+        heroGraphicContainers.forEach(hc => {
+            if(i < imgs.length) {
+                hc.style.background = `url('${imgs[i-1]}') center/cover no-repeat`; // use same hero image
+                hc.style.borderRadius = '12px';
+            }
+        });
+
+        // Replace product/category images
+        const cards = document.querySelectorAll('.category-img, .product-img, .service-img, .dept-img');
+        cards.forEach(card => {
+            if(i < imgs.length) {
+                card.style.background = `url('${imgs[i]}') center/cover no-repeat`;
+                card.innerHTML = ''; // clear emoji or text
+                i++;
+            }
+        });
+    }
+});
+</script>
+
+</body>
+</html>

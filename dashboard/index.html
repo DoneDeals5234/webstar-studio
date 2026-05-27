@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WebStar Studio | Client Admin Dashboard</title>
+  <link rel="icon" type="image/png" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><circle cx='50' cy='50' r='40' fill='%239f7aea'/></svg>">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Toast Notification -->
+  <div id="toast-container" class="toast-container"></div>
+
+  <!-- Dashboard Grid Layout -->
+  <div class="dashboard-wrapper">
+    
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <div class="sidebar-brand">
+        <a href="../index.html" class="logo">
+          WebStar <span>Studio</span><div class="logo-dot"></div>
+        </a>
+      </div>
+      <nav class="sidebar-nav">
+        <a href="#overview" class="active">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="9"></rect><rect x="14" y="3" width="7" height="5"></rect><rect x="14" y="12" width="7" height="9"></rect><rect x="3" y="16" width="7" height="5"></rect></svg>
+          Overview Console
+        </a>
+        <a href="#logs">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>
+          Webhook JSON Logs
+        </a>
+        <a href="#settings">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"></circle><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 1 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 1 1-2.83-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 1 1 2.83-2.83l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 1 1 2.83 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z"></path></svg>
+          System Setup
+        </a>
+      </nav>
+      <div class="sidebar-footer">
+        <a href="../index.html" class="btn btn-secondary btn-sm" style="width: 100%; justify-content: center; font-size: 0.8rem; padding: 8px 12px;">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="19" y1="12" x2="5" y2="12"></line><polyline points="12 19 5 12 12 5"></polyline></svg>
+          Exit Dashboard
+        </a>
+      </div>
+    </aside>
+
+    <!-- Main Content Area -->
+    <main class="main-content">
+      
+      <!-- Top navbar -->
+      <div class="dashboard-header">
+        <div class="header-search">
+          <h2>WebStar Portal Admin</h2>
+        </div>
+        <div class="header-profile">
+          <span class="pulse-dot"></span>
+          <span>WebStar Studio Agent</span>
+        </div>
+      </div>
+
+      <!-- Core Views -->
+      <div class="dashboard-views">
+        
+        <!-- View 1: Overview Dashboard -->
+        <section id="overview" class="view-section active">
+          
+          <!-- KPI Statistics Cards -->
+          <div class="metrics-grid">
+            <div class="metric-card">
+              <div class="metric-icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
+              </div>
+              <div class="metric-info">
+                <h4 id="metric-total-leads">0</h4>
+                <p>Total Leads Captured</p>
+              </div>
+            </div>
+            
+            <div class="metric-card">
+              <div class="metric-icon" style="color: #10b981; background: #ecfdf5;">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
+              </div>
+              <div class="metric-info">
+                <h4 id="metric-delivered-hooks">0</h4>
+                <p>WhatsApp API Dispatches</p>
+              </div>
+            </div>
+
+            <div class="metric-card">
+              <div class="metric-icon" style="color: #f59e0b; background: #fffbeb;">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+              </div>
+              <div class="metric-info">
+                <h4>99.9%</h4>
+                <p>Uptime Efficiency</p>
+              </div>
+            </div>
+
+            <div class="metric-card">
+              <div class="metric-icon" style="color: #8b5cf6; background: #f5f3ff;">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="9"></rect><rect x="14" y="3" width="7" height="5"></rect><rect x="14" y="12" width="7" height="9"></rect><rect x="3" y="16" width="7" height="5"></rect></svg>
+              </div>
+              <div class="metric-info">
+                <h4>5 / 5</h4>
+                <p>Active Layout Demos</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Charts and Traffic sources Grid -->
+          <div class="content-row">
+            <!-- Traffic chart column -->
+            <div class="card chart-card">
+              <div class="card-header">
+                <h3>Lead Distribution by Channel</h3>
+              </div>
+              <div class="bar-chart-container">
+                <div class="bar-row">
+                  <span class="bar-label">Boutique Mockup</span>
+                  <div class="bar-progress-wrapper">
+                    <div class="bar-progress" id="chart-boutique" style="width: 15%;"></div>
+                  </div>
+                  <span class="bar-val" id="val-boutique">15%</span>
+                </div>
+                <div class="bar-row">
+                  <span class="bar-label">Shoe Shop Mockup</span>
+                  <div class="bar-progress-wrapper">
+                    <div class="bar-progress" id="chart-shoes" style="width: 25%;"></div>
+                  </div>
+                  <span class="bar-val" id="val-shoes">25%</span>
+                </div>
+                <div class="bar-row">
+                  <span class="bar-label">Perfume Shop Mockup</span>
+                  <div class="bar-progress-wrapper">
+                    <div class="bar-progress" id="chart-perfume" style="width: 20%;"></div>
+                  </div>
+                  <span class="bar-val" id="val-perfume">20%</span>
+                </div>
+                <div class="bar-row">
+                  <span class="bar-label">Corporate Website</span>
+                  <div class="bar-progress-wrapper">
+                    <div class="bar-progress" id="chart-corporate" style="width: 30%;"></div>
+                  </div>
+                  <span class="bar-val" id="val-corporate">30%</span>
+                </div>
+                <div class="bar-row">
+                  <span class="bar-label">Gov Grievances Portal</span>
+                  <div class="bar-progress-wrapper">
+                    <div class="bar-progress" id="chart-government" style="width: 10%;"></div>
+                  </div>
+                  <span class="bar-val" id="val-government">10%</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Developer helper note -->
+            <div class="card helper-card">
+              <h3>Real-Time Sync Sandbox</h3>
+              <p>Whenever you submit forms on the <a href="../index.html" style="color:var(--color-primary); font-weight:600;">Main Page</a> or inside any of the <span style="font-weight:600; color:var(--color-primary)">5 Client Demos</span>, they immediately sync here in the browser log via localStorage APIs.</p>
+              <div class="helper-status-bar">
+                <span>Webhook Destination:</span>
+                <span class="phone-num-target" id="display-target-phone">+91 75089 90616</span>
+              </div>
+              <button class="btn btn-secondary" id="btn-seed-data" style="margin-top:16px; font-size:0.8rem; padding:8px 16px;">
+                Seed Demo Submissions
+              </button>
+            </div>
+          </div>
+
+          <!-- Recent Leads Log -->
+          <div class="card table-card">
+            <div class="card-header">
+              <h3>Recent Inquiries & Webhooks Captured</h3>
+            </div>
+            <div class="table-scroll-container">
+              <table class="leads-table">
+                <thead>
+                  <tr>
+                    <th>Source Portal</th>
+                    <th>Customer Name</th>
+                    <th>Email Address</th>
+                    <th>Requested Interest</th>
+                    <th>Timestamp</th>
+                    <th>Actions</th>
+                  </tr>
+                </thead>
+                <tbody id="leads-table-body">
+                  <tr>
+                    <td colspan="6" style="text-align: center; color: #a0aec0; padding: 40px 0;">
+                      No inquiries captured yet. Feed data using the seed button above or submit a form in the mockups!
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </section>
+
+        <!-- View 2: Detailed Webhook Logs -->
+        <section id="logs" class="view-section">
+          <div class="card code-viewer-card">
+            <div class="card-header">
+              <h3>Simulated JSON API Payloads (Twilio Outgoing Hook)</h3>
+              <p>Below is the structured JSON object dispatched by WebStar's integration pipeline on successful form actions.</p>
+            </div>
+            <div class="code-viewer-grid">
+              <div class="payload-list" id="payload-list-container">
+                <div class="payload-item-placeholder">No payloads recorded. Submit forms to capture traces.</div>
+              </div>
+              <div class="payload-details">
+                <div class="details-top">
+                  <span class="payload-tag">JSON TRACE</span>
+                  <button class="btn btn-outline btn-sm" id="btn-copy-payload">Copy JSON</button>
+                </div>
+                <pre class="code-block"><code id="code-json-body">{
+  "info": "Select an API trace payload on the left to view the payload properties."
+}</code></pre>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- View 3: Settings Panel -->
+        <section id="settings" class="view-section">
+          <div class="card form-card">
+            <div class="card-header">
+              <h3>WhatsApp Automation Settings</h3>
+              <p>Configure routing variables mapping API endpoints, webhooks, and receiver numbers.</p>
+            </div>
+            <form id="settings-form" class="settings-form" style="margin-top:24px;">
+              <div class="form-group">
+                <label for="settings-phone">Owner WhatsApp Phone (e.g. +917508990616)</label>
+                <input type="text" id="settings-phone" value="+917508990616">
+              </div>
+              <div class="form-group">
+                <label for="settings-twilio-sid">Simulated Twilio Account SID</label>
+                <input type="text" id="settings-twilio-sid" value="AC_TWILIO_ACCOUNT_SID_PLACEHOLDER" readonly>
+              </div>
+              <div class="form-group">
+                <label for="settings-api-target">Webhook Relay Endpoint</label>
+                <input type="text" id="settings-api-target" value="https://n8n.webstar.io/webhook/v1/lead-ingestion" readonly>
+              </div>
+              <div class="settings-btn-row">
+                <button type="submit" class="btn btn-primary">Update System Variables</button>
+                <button type="button" class="btn btn-outline" id="btn-clear-db" style="border-color: #ef4444; color: #ef4444;">
+                  Reset Inquiry Log DB
+                </button>
+              </div>
+            </form>
+          </div>
+        </section>
+
+      </div>
+    </main>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Apex Municipal Corporation | Gov Portal</title>
+  
+  <!-- Shared control styles -->
+  <link rel="stylesheet" href="../frame.css">
+  <!-- Government specific styles -->
+  <link rel="stylesheet" href="style.css" id="theme-stylesheet">
+</head>
+<body data-mockup-name="Government Portal">
+
+  <!-- Accessibility Top Toolbar -->
+  <div class="gov-top-bar">
+    <div class="gov-container">
+      <div class="gov-top-links">
+        <a href="#services" data-trn="skip-main">Skip to Main Content</a>
+        <span>|</span>
+        <button id="btn-contrast-toggle" class="gov-top-btn" title="Toggle High Contrast Mode">Contrast Theme</button>
+      </div>
+      <div class="gov-language-toggle">
+        <!-- Hindi/English Buttons -->
+        <button id="lang-eng" class="lang-btn active">English</button>
+        <button id="lang-hin" class="lang-btn">हिन्दी</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Government Branding Header -->
+  <header class="gov-header">
+    <div class="gov-container">
+      <div class="gov-branding">
+        <!-- Mock Emblem SVG -->
+        <svg width="40" height="40" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M50 10C65 25 65 75 50 90C35 75 35 25 50 10Z" fill="none" stroke="hsl(265, 80%, 45%)" stroke-width="6"/>
+          <line x1="50" y1="10" x2="50" y2="90" stroke="hsl(265, 80%, 45%)" stroke-width="4"/>
+          <circle cx="50" cy="50" r="12" fill="none" stroke="hsl(265, 80%, 45%)" stroke-width="3"/>
+        </svg>
+        <div class="gov-title-text">
+          <h1 id="gov-logo-main">Apex Municipal Department</h1>
+          <p id="gov-logo-sub">Official Citizen Portal • Government of India</p>
+        </div>
+      </div>
+      <div class="gov-header-search">
+        <label for="gov-search" class="visually-hidden">Search Portal</label>
+        <input type="text" id="gov-search" placeholder="Search notices, applications...">
+        <button id="btn-search-submit">Search</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Navigation Bar -->
+  <nav class="gov-nav-bar">
+    <div class="gov-container">
+      <div class="gov-menu" id="gov-nav-links">
+        <a href="#" class="active" data-trn="nav-home">Home</a>
+        <a href="#notices" data-trn="nav-notices">Notices</a>
+        <a href="#services" data-trn="nav-services">Citizen Services</a>
+        <a href="#grievance" data-trn="nav-grievance">Grievance Desk</a>
+        <a href="#emergency" data-trn="nav-emergency">Emergency Contacts</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="gov-hero">
+    <div class="gov-container">
+      <div class="gov-hero-wrapper">
+        <div class="gov-hero-content">
+          <h2 data-trn="hero-title">Empowering Citizens with Digital Transparency</h2>
+          <p data-trn="hero-desc">Access civic certificates, lodge grievances, search latest municipal notices, and review development plans online.</p>
+          <a href="#services" class="gov-btn" data-trn="hero-cta">Apply for Services</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Split Row: Notices and Citizen Services -->
+  <section class="gov-info-section" id="services">
+    <div class="gov-container">
+      <div class="gov-info-grid">
+        
+        <!-- Citizen Services Column -->
+        <div class="gov-services-col">
+          <h2 data-trn="sec-services">Online Citizen Services</h2>
+          <div class="gov-divider"></div>
+          
+          <div class="gov-services-list">
+            <!-- Item 1 -->
+            <div class="gov-service-item">
+              <div class="icon">📜</div>
+              <div class="text">
+                <h3 data-trn="srv-birth-title">Birth & Death Certificates</h3>
+                <p data-trn="srv-birth-desc">Register or download certified copies of vital records.</p>
+              </div>
+            </div>
+            <!-- Item 2 -->
+            <div class="gov-service-item">
+              <div class="icon">🏡</div>
+              <div class="text">
+                <h3 data-trn="srv-prop-title">Property Tax Assessor</h3>
+                <p data-trn="srv-prop-desc">Calculate municipal dues, view receipts, and make online payments.</p>
+              </div>
+            </div>
+            <!-- Item 3 -->
+            <div class="gov-service-item">
+              <div class="icon">💧</div>
+              <div class="text">
+                <h3 data-trn="srv-water-title">New Water Connection</h3>
+                <p data-trn="srv-water-desc">Apply for municipal pipeline connections and pay bills.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Latest Notices Column -->
+        <div class="gov-notices-col" id="notices">
+          <h2 data-trn="sec-notices">Latest Notifications</h2>
+          <div class="gov-divider"></div>
+          
+          <div class="gov-notices-list">
+            <div class="notice-item">
+              <span class="notice-date">27 May 2026</span>
+              <p><a href="#" data-trn="not-1">Tender details for Ward 12 sewer pipeline construction.</a></p>
+            </div>
+            <div class="notice-item">
+              <span class="notice-date">22 May 2026</span>
+              <p><a href="#" data-trn="not-2">Draft zoning plan regulations for Zone 4 - Inviting objections.</a></p>
+            </div>
+            <div class="notice-item">
+              <span class="notice-date">15 May 2026</span>
+              <p><a href="#" data-trn="not-3">Revised rates for trade licensing approvals for financial year 2026-27.</a></p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Emergency Contacts Bar -->
+  <section class="gov-emergency-bar" id="emergency">
+    <div class="gov-container">
+      <h2 data-trn="sec-emergency" style="color:white; font-size:1.4rem; text-align:center; margin-bottom:20px;">Emergency Citizens Helplines</h2>
+      <div class="gov-emergency-grid">
+        <div class="emergency-card">
+          <h3 data-trn="helpline-control">Control Center</h3>
+          <p><a href="tel:7508990616">+91 75089 90616</a></p>
+        </div>
+        <div class="emergency-card">
+          <h3 data-trn="helpline-ambulance">Municipal Ambulance</h3>
+          <p><a href="tel:7508990616">+91 75089 90616</a></p>
+        </div>
+        <div class="emergency-card">
+          <h3 data-trn="helpline-disaster">Disaster Response</h3>
+          <p><a href="tel:7508990616">+91 75089 90616</a></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Grievance Redressal desk form -->
+  <section id="grievance" class="gov-grievance-section">
+    <div class="gov-container">
+      <div class="gov-grievance-wrapper">
+        
+        <div class="grievance-info">
+          <h2 data-trn="sec-grievance">Citizen Grievance Redressal Desk</h2>
+          <div class="gov-divider"></div>
+          <p data-trn="grievance-desc">Lodge public grievances regarding municipal failures (e.g. road repair, waste management, streetlights). Upon submission, a grievance record is logged in the department database, a receipt is generated, and a direct alert is sent to ward engineers.</p>
+          <div class="grievance-warning" data-trn="grievance-warn">
+            ⚠️ Filing false complaints is punishable under section 182 of the municipal code.
+          </div>
+        </div>
+
+        <form id="gov-grievance-form" class="gov-form">
+          <div class="gov-group">
+            <label for="g-name" data-trn="lbl-name">Citizen Full Name</label>
+            <input type="text" id="g-name" required>
+          </div>
+          <div class="gov-group">
+            <label for="g-email" data-trn="lbl-email">Contact Email ID</label>
+            <input type="email" id="g-email" required>
+          </div>
+          <div class="gov-group">
+            <label for="g-type" data-trn="lbl-type">Type of Grievance</label>
+            <select id="g-type" required>
+              <option value="Road Maintenance" data-trn="opt-road">Road Maintenance / Potholes</option>
+              <option value="Waste Collection" data-trn="opt-waste">Garbage Disposal / Sanitation</option>
+              <option value="Streetlight Repair" data-trn="opt-lights">Streetlight Repair</option>
+            </select>
+          </div>
+          <div class="gov-group">
+            <label for="g-details" data-trn="lbl-details">Complaint details</label>
+            <textarea id="g-details" rows="4" required></textarea>
+          </div>
+          <button type="submit" class="gov-btn" style="width: 100%; justify-content: center;" data-trn="btn-submit">Submit Grievance</button>
+        </form>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- GIGW Compliant Footer -->
+  <footer class="gov-footer">
+    <div class="gov-container">
+      <div class="gov-footer-wrapper">
+        <div class="gov-footer-brand">
+          <h3>Apex Municipal Department Portal</h3>
+          <p data-trn="foot-desc">This is the official public portal of the municipal department, hosted and managed by ward administration.</p>
+        </div>
+        <div class="gov-footer-links">
+          <a href="#" data-trn="foot-sitemap">Sitemap</a>
+          <span>|</span>
+          <a href="#" data-trn="foot-terms">Terms of Service</a>
+          <span>|</span>
+          <a href="tel:7508990616" data-trn="foot-contact">Contact Us</a>
+        </div>
+      </div>
+      <div class="gov-footer-bottom">
+        <p>&copy; 2026 Municipal Administration. All rights reserved. domain: <span style="font-weight:600;">apex.municipal.gov.in</span></p>
+        <div class="gov-footer-ssl">
+          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path></svg>
+          <span data-trn="foot-ssl">SSL Padlock Secure connection</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../frame.js"></script>
+  <script src="app.js"></script>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    const mockup = window.location.pathname.split('/').reverse()[1];
+    const images = {"boutique": ["https://images.unsplash.com/photo-1490481651871-ab68de25d43d?auto=format&fit=crop&w=1200&q=80", "https://images.unsplash.com/photo-1445205170230-053b83016050?auto=format&fit=crop&w=1200&q=80", "https://images.unsplash.com/photo-1572804013309-82a89141a5dc?auto=format&fit=crop&w=400&q=80", "https://images.unsplash.com/photo-1596755094514-f87e32f85e98?auto=format&fit=crop&w=400&q=80", "https://images.unsplash.com/photo-1594633312681-425c7b97ccd1?auto=format&fit=crop&w=400&q=80", "https://images.unsplash.com/photo-1539008835657-9e8e9680c956?auto=format&fit=crop&w=400&q=80", "https://images.unsplash.com/photo-1585487000160-6ebcfceb0d03?auto=format&fit=crop&w=400&q=80", "https://images.unsplash.com/photo-1591369822096-ffd140ec948f?auto=format&fit=crop&w=400&q=80"], "shoes": ["https://images.unsplash.com/photo-1511556532299-8f662fc26c06?auto=format&fit=crop&w=1200&q=80", "https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=400&q=80", "https://images.unsplash.com/photo-1600185365483-26d7a4cc7519?auto=format&fit=crop&w=400&q=80", "https://images.unsplash.com/photo-1525966222134-fcfa99b8ae77?auto=format&fit=crop&w=400&q=80", "https://images.unsplash.com/photo-1608231387042-66d1773070a5?auto=format&fit=crop&w=400&q=80", "https://images.unsplash.com/photo-1560769629-975ec94e6a86?auto=format&fit=crop&w=400&q=80", "https://images.unsplash.com/photo-1595950653106-6c9ebd614d3a?auto=format&fit=crop&w=400&q=80"], "perfume": ["https://images.unsplash.com/photo-1523293182086-7651a899d37f?auto=format&fit=crop&w=1200&q=80", "https://images.unsplash.com/photo-1588405748880-12d1d2a59f75?auto=format&fit=crop&w=400&q=80", "https://images.unsplash.com/photo-1590736969955-71cc94801759?auto=format&fit=crop&w=400&q=80", "https://images.unsplash.com/photo-1592945403244-b3fbafd7f539?auto=format&fit=crop&w=400&q=80", "https://images.unsplash.com/photo-1594035910387-fea47794261f?auto=format&fit=crop&w=400&q=80"], "corporate": ["https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=1200&q=80", "https://images.unsplash.com/photo-1600880292203-757bb62b4baf?auto=format&fit=crop&w=400&q=80", "https://images.unsplash.com/photo-1542744173-8e7e53415bb0?auto=format&fit=crop&w=400&q=80", "https://images.unsplash.com/photo-1556761175-5973dc0f32e7?auto=format&fit=crop&w=400&q=80", "https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=400&q=80"], "government": ["https://images.unsplash.com/photo-1523292562811-8fa7962a78c8?auto=format&fit=crop&w=1200&q=80", "https://images.unsplash.com/photo-1580128660010-fdcb27678f28?auto=format&fit=crop&w=400&q=80", "https://images.unsplash.com/photo-1582213782179-e0d53f98f2ca?auto=format&fit=crop&w=400&q=80", "https://images.unsplash.com/photo-1577495508048-b635879837f1?auto=format&fit=crop&w=400&q=80"]};
+    
+    if (images[mockup]) {
+        let imgs = images[mockup];
+        let i = 0;
+        
+        // Try to replace hero background
+        const heroes = document.querySelectorAll('.boutique-slide, .shoes-hero-wrapper, .perfume-hero, .corporate-hero, .gov-hero');
+        heroes.forEach(h => {
+            if(i < imgs.length) {
+                h.style.background = `url('${imgs[i]}') center/cover no-repeat`;
+                i++;
+            }
+        });
+
+        // Replace graphic elements instead of background for some layouts
+        const heroGraphics = document.querySelectorAll('.shoes-hero-graphic svg, .shoes-graphic-circle');
+        heroGraphics.forEach(hg => hg.style.display = 'none');
+        const heroGraphicContainers = document.querySelectorAll('.shoes-hero-graphic');
+        heroGraphicContainers.forEach(hc => {
+            if(i < imgs.length) {
+                hc.style.background = `url('${imgs[i-1]}') center/cover no-repeat`; // use same hero image
+                hc.style.borderRadius = '12px';
+            }
+        });
+
+        // Replace product/category images
+        const cards = document.querySelectorAll('.category-img, .product-img, .service-img, .dept-img');
+        cards.forEach(card => {
+            if(i < imgs.length) {
+                card.style.background = `url('${imgs[i]}') center/cover no-repeat`;
+                card.innerHTML = ''; // clear emoji or text
+                i++;
+            }
+        });
+    }
+});
+</script>
+
+</body>
+</html>

@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>L'Arôme Violette | Luxury Perfumer</title>
+  
+  <!-- Shared control styles -->
+  <link rel="stylesheet" href="../frame.css">
+  <!-- Perfume specific styles -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body data-mockup-name="Perfume Shop">
+
+  <!-- Sticky Nav -->
+  <header class="perfume-header" id="perfume-nav">
+    <div class="perfume-container">
+      <a href="#" class="perfume-logo">L'ARÔME <span>VIOLETTE</span></a>
+      <nav class="perfume-nav">
+        <a href="#">Home</a>
+        <a href="#sellers">Best Sellers</a>
+        <a href="#heritage">Heritage</a>
+        <a href="#enquire">Request Sample</a>
+      </nav>
+      <div class="perfume-nav-right">
+        <a href="tel:7508990616" title="Call Boutique">Call</a>
+        <a href="https://wa.me/917508990616" target="_blank" title="WhatsApp Chat">WhatsApp</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="perfume-hero">
+    <div class="perfume-container">
+      <div class="perfume-hero-content">
+        <span class="perfume-sub">L'Atelier De Violette</span>
+        <h1>Curated Lavender Fragrances</h1>
+        <div class="thin-underline"></div>
+        <p>Distilled in the fields of Provence. Curated with organic violet roots and sweet white lavender nodes to evoke calm and creativity.</p>
+        <a href="#sellers" class="perfume-btn">Explore Fragrances</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Best Sellers Carousel -->
+  <section id="sellers" class="carousel-section">
+    <div class="perfume-container">
+      <div class="perfume-section-title">
+        <h2>Our Best Sellers</h2>
+        <div class="thin-underline centered"></div>
+        <p>Timeless organic scents selected by fragrance connoisseurs worldwide.</p>
+      </div>
+
+      <!-- Slider Container -->
+      <div class="perfume-carousel-wrapper">
+        <button class="carousel-nav prev" id="carousel-prev-btn">&#10216;</button>
+        <div class="perfume-carousel-inner" id="perfume-carousel-inner">
+          <!-- Item 1 -->
+          <div class="carousel-item active">
+            <div class="item-visual">
+              <svg width="100" height="150" viewBox="0 0 100 150" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect x="25" y="45" width="50" height="85" rx="12" fill="white" stroke="hsl(265, 80%, 65%)" stroke-width="4"/>
+                <rect x="42" y="22" width="16" height="23" fill="#faf5ff" stroke="hsl(265, 80%, 65%)" stroke-width="3"/>
+                <circle cx="50" cy="85" r="10" fill="hsl(265, 80%, 95%)" stroke="hsl(265, 80%, 65%)" stroke-width="2"/>
+              </svg>
+            </div>
+            <div class="item-details">
+              <h3>Lavender Mist Oud</h3>
+              <p>Deep agarwood notes combined with Bulgarian white lavender extract and organic cedar shavings.</p>
+              <span class="item-tag">Floral & Woody</span>
+            </div>
+          </div>
+
+          <!-- Item 2 -->
+          <div class="carousel-item">
+            <div class="item-visual">
+              <svg width="100" height="150" viewBox="0 0 100 150" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect x="25" y="45" width="50" height="85" rx="12" fill="white" stroke="hsl(265, 80%, 65%)" stroke-width="4"/>
+                <rect x="42" y="22" width="16" height="23" fill="#faf5ff" stroke="hsl(265, 80%, 65%)" stroke-width="3"/>
+                <circle cx="50" cy="85" r="12" fill="hsl(265, 80%, 95%)" stroke="hsl(265, 80%, 65%)" stroke-width="2"/>
+              </svg>
+            </div>
+            <div class="item-details">
+              <h3>Lilac Nectar Bloom</h3>
+              <p>Sweet lilac nectar, fresh pear extracts, and an underlying tone of delicate vanilla pods.</p>
+              <span class="item-tag">Sweet & Citrusy</span>
+            </div>
+          </div>
+
+          <!-- Item 3 -->
+          <div class="carousel-item">
+            <div class="item-visual">
+              <svg width="100" height="150" viewBox="0 0 100 150" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect x="25" y="45" width="50" height="85" rx="12" fill="white" stroke="hsl(265, 80%, 65%)" stroke-width="4"/>
+                <rect x="42" y="22" width="16" height="23" fill="#faf5ff" stroke="hsl(265, 80%, 65%)" stroke-width="3"/>
+                <circle cx="50" cy="85" r="10" fill="hsl(265, 80%, 95%)" stroke="hsl(265, 80%, 65%)" stroke-width="2"/>
+              </svg>
+            </div>
+            <div class="item-details">
+              <h3>French Blossom</h3>
+              <p>Pure English lavender nodes distilled in copper vessels with ambient jasmine oils.</p>
+              <span class="item-tag">Breezy Lavender</span>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-nav next" id="carousel-next-btn">&#10217;</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Heritage Section -->
+  <section id="heritage" class="heritage-section">
+    <div class="perfume-container">
+      <div class="heritage-wrapper">
+        <div class="heritage-text">
+          <span class="heritage-sub">Est. 1912</span>
+          <h2>Crafted in French Traditions</h2>
+          <div class="thin-underline"></div>
+          <p>For over a century, L'Arôme Violette has harvested the finest lavender shrubs from high-altitude fields of Provence. Distilling only in the early morning hours, we capture the pure, serene molecules that make each scent incredibly peaceful and luxurious.</p>
+          <p>Our formulas avoid synthetic additions. Every drop holds absolute botanical oil essences designed to stay vibrant on the skin for over 24 hours.</p>
+        </div>
+        <div class="heritage-visual">
+          <div class="heritage-circle-deco">
+            <span>100%</span>
+            <p>Botanical Oils</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Enquire Sample Form Section -->
+  <section id="enquire" class="enquire-section">
+    <div class="perfume-container">
+      <div class="enquire-wrapper">
+        <div class="enquire-intro">
+          <h2>Request a Tester Sample</h2>
+          <div class="thin-underline"></div>
+          <p>Experience L'Arôme Violette in your home. Select your preferred scent and fill in details below. Our team will verify and dispatch a complimentary 2ml sample vial directly to your door.</p>
+          <p>Upon submission, your details are instantly routed to our shipping department via WhatsApp API integrations.</p>
+        </div>
+
+        <form id="perfume-enquiry-form" class="perfume-form">
+          <div class="p-form-group">
+            <label for="p-name">Recipient Name</label>
+            <input type="text" id="p-name" placeholder="John Doe" required>
+          </div>
+          <div class="p-form-row">
+            <div class="p-form-group">
+              <label for="p-email">Email</label>
+              <input type="email" id="p-email" placeholder="john@domain.com" required>
+            </div>
+            <div class="p-form-group">
+              <label for="p-fragrance">Select Fragrance</label>
+              <select id="p-fragrance" required>
+                <option value="Lavender Mist Oud">Lavender Mist Oud (Woody)</option>
+                <option value="Lilac Nectar Bloom">Lilac Nectar Bloom (Sweet)</option>
+                <option value="French Blossom">French Blossom (Classic)</option>
+              </select>
+            </div>
+          </div>
+          <div class="p-form-group">
+            <label for="p-address">Shipping Address</label>
+            <textarea id="p-address" rows="3" placeholder="Enter full address details" required></textarea>
+          </div>
+          <button type="submit" class="perfume-btn" style="width: 100%;">Submit Sample Request</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contacts Bar & Footer -->
+  <footer class="perfume-footer">
+    <div class="perfume-container">
+      <div class="footer-contacts-bar">
+        <!-- Dialer -->
+        <a href="tel:7508990616" class="contact-card-link">
+          <span class="icon">📞</span>
+          <span>Boutique Phone: +91 75089 90616</span>
+        </a>
+        <!-- WhatsApp -->
+        <a href="https://wa.me/917508990616" target="_blank" class="contact-card-link">
+          <span class="icon">💬</span>
+          <span>WhatsApp Chat Support</span>
+        </a>
+        <!-- Email -->
+        <a href="mailto:pv173597@gmail.com" class="contact-card-link">
+          <span class="icon">📧</span>
+          <span>Email: pv173597@gmail.com</span>
+        </a>
+      </div>
+      
+      <div class="footer-bottom-bar">
+        <p>&copy; 2026 L'Arôme Violette. Handcrafted in India. SSL Inspected.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../frame.js"></script>
+  <script src="app.js"></script>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    const mockup = window.location.pathname.split('/').reverse()[1];
+    const images = {"boutique": ["https://images.unsplash.com/photo-1490481651871-ab68de25d43d?auto=format&fit=crop&w=1200&q=80", "https://images.unsplash.com/photo-1445205170230-053b83016050?auto=format&fit=crop&w=1200&q=80", "https://images.unsplash.com/photo-1572804013309-82a89141a5dc?auto=format&fit=crop&w=400&q=80", "https://images.unsplash.com/photo-1596755094514-f87e32f85e98?auto=format&fit=crop&w=400&q=80", "https://images.unsplash.com/photo-1594633312681-425c7b97ccd1?auto=format&fit=crop&w=400&q=80", "https://images.unsplash.com/photo-1539008835657-9e8e9680c956?auto=format&fit=crop&w=400&q=80", "https://images.unsplash.com/photo-1585487000160-6ebcfceb0d03?auto=format&fit=crop&w=400&q=80", "https://images.unsplash.com/photo-1591369822096-ffd140ec948f?auto=format&fit=crop&w=400&q=80"], "shoes": ["https://images.unsplash.com/photo-1511556532299-8f662fc26c06?auto=format&fit=crop&w=1200&q=80", "https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=400&q=80", "https://images.unsplash.com/photo-1600185365483-26d7a4cc7519?auto=format&fit=crop&w=400&q=80", "https://images.unsplash.com/photo-1525966222134-fcfa99b8ae77?auto=format&fit=crop&w=400&q=80", "https://images.unsplash.com/photo-1608231387042-66d1773070a5?auto=format&fit=crop&w=400&q=80", "https://images.unsplash.com/photo-1560769629-975ec94e6a86?auto=format&fit=crop&w=400&q=80", "https://images.unsplash.com/photo-1595950653106-6c9ebd614d3a?auto=format&fit=crop&w=400&q=80"], "perfume": ["https://images.unsplash.com/photo-1523293182086-7651a899d37f?auto=format&fit=crop&w=1200&q=80", "https://images.unsplash.com/photo-1588405748880-12d1d2a59f75?auto=format&fit=crop&w=400&q=80", "https://images.unsplash.com/photo-1590736969955-71cc94801759?auto=format&fit=crop&w=400&q=80", "https://images.unsplash.com/photo-1592945403244-b3fbafd7f539?auto=format&fit=crop&w=400&q=80", "https://images.unsplash.com/photo-1594035910387-fea47794261f?auto=format&fit=crop&w=400&q=80"], "corporate": ["https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=1200&q=80", "https://images.unsplash.com/photo-1600880292203-757bb62b4baf?auto=format&fit=crop&w=400&q=80", "https://images.unsplash.com/photo-1542744173-8e7e53415bb0?auto=format&fit=crop&w=400&q=80", "https://images.unsplash.com/photo-1556761175-5973dc0f32e7?auto=format&fit=crop&w=400&q=80", "https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=400&q=80"], "government": ["https://images.unsplash.com/photo-1523292562811-8fa7962a78c8?auto=format&fit=crop&w=1200&q=80", "https://images.unsplash.com/photo-1580128660010-fdcb27678f28?auto=format&fit=crop&w=400&q=80", "https://images.unsplash.com/photo-1582213782179-e0d53f98f2ca?auto=format&fit=crop&w=400&q=80", "https://images.unsplash.com/photo-1577495508048-b635879837f1?auto=format&fit=crop&w=400&q=80"]};
+    
+    if (images[mockup]) {
+        let imgs = images[mockup];
+        let i = 0;
+        
+        // Try to replace hero background
+        const heroes = document.querySelectorAll('.boutique-slide, .shoes-hero-wrapper, .perfume-hero, .corporate-hero, .gov-hero');
+        heroes.forEach(h => {
+            if(i < imgs.length) {
+                h.style.background = `url('${imgs[i]}') center/cover no-repeat`;
+                i++;
+            }
+        });
+
+        // Replace graphic elements instead of background for some layouts
+        const heroGraphics = document.querySelectorAll('.shoes-hero-graphic svg, .shoes-graphic-circle');
+        heroGraphics.forEach(hg => hg.style.display = 'none');
+        const heroGraphicContainers = document.querySelectorAll('.shoes-hero-graphic');
+        heroGraphicContainers.forEach(hc => {
+            if(i < imgs.length) {
+                hc.style.background = `url('${imgs[i-1]}') center/cover no-repeat`; // use same hero image
+                hc.style.borderRadius = '12px';
+            }
+        });
+
+        // Replace product/category images
+        const cards = document.querySelectorAll('.category-img, .product-img, .service-img, .dept-img');
+        cards.forEach(card => {
+            if(i < imgs.length) {
+                card.style.background = `url('${imgs[i]}') center/cover no-repeat`;
+                card.innerHTML = ''; // clear emoji or text
+                i++;
+            }
+        });
+    }
+});
+</script>
+
+</body>
+</html>

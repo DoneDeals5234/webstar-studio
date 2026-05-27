@@ -1,0 +1,437 @@
+/* Corporate Professional Stylesheet - Apex Lavender */
+
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap');
+
+:root {
+  --corp-font-main: 'Outfit', sans-serif;
+  --corp-color-primary: hsl(265, 70%, 55%);
+  --corp-color-primary-light: hsl(265, 100%, 97%);
+  --corp-color-dark: #1a202c;
+  --corp-color-muted: #718096;
+  --corp-color-border: #edf2f7;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--corp-font-main);
+  color: var(--corp-color-dark);
+  background: #ffffff;
+}
+
+.corp-container {
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  transition: all 0.3s ease;
+}
+
+/* Typography */
+h1, h2, h3, h4 {
+  font-weight: 700;
+  line-height: 1.25;
+}
+
+/* Tag */
+.corp-tag {
+  display: inline-block;
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--corp-color-primary);
+  background: var(--corp-color-primary-light);
+  padding: 6px 14px;
+  border-radius: 4px;
+  margin-bottom: 16px;
+}
+
+/* Buttons */
+.corp-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: var(--corp-color-primary);
+  color: white;
+  padding: 12px 28px;
+  border-radius: 6px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  border: 1px solid transparent;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.corp-btn:hover {
+  background: hsl(265, 70%, 48%);
+  transform: translateY(-1px);
+}
+
+.corp-btn-outline {
+  background: transparent;
+  color: var(--corp-color-dark);
+  border: 1px solid var(--corp-color-border);
+}
+
+.corp-btn-outline:hover {
+  background: #fafafa;
+  border-color: var(--corp-color-primary);
+  color: var(--corp-color-primary);
+}
+
+.corp-btn-sm {
+  padding: 8px 16px;
+  font-size: 0.8rem;
+}
+
+/* Header */
+.corp-header {
+  position: fixed;
+  top: 54px;
+  left: 0;
+  width: 100%;
+  z-index: 999;
+  background: rgba(255,255,255,0.9);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid var(--corp-color-border);
+  padding: 16px 0;
+}
+
+.corp-header .corp-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.corp-logo {
+  font-size: 1.25rem;
+  font-weight: 800;
+  letter-spacing: -0.01em;
+}
+
+.corp-logo span {
+  color: var(--corp-color-primary);
+}
+
+.corp-nav {
+  display: flex;
+  gap: 24px;
+}
+
+.corp-nav a {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--corp-color-muted);
+}
+
+.corp-nav a:hover {
+  color: var(--corp-color-primary);
+}
+
+.corp-header-actions {
+  display: flex;
+  gap: 12px;
+}
+
+/* Hero Section */
+.corp-hero {
+  padding: 160px 0 100px 0;
+  background: linear-gradient(135deg, #ffffff 0%, #fafafa 100%);
+  border-bottom: 1px solid var(--corp-color-border);
+}
+
+.corp-hero-content {
+  max-width: 650px;
+}
+
+.corp-hero-content h1 {
+  font-size: 3.4rem;
+  margin-bottom: 20px;
+  letter-spacing: -0.02em;
+}
+
+.corp-hero-content p {
+  color: var(--corp-color-muted);
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 36px;
+}
+
+.corp-hero-buttons {
+  display: flex;
+  gap: 16px;
+}
+
+/* Stats Banner section */
+.corp-stats-banner {
+  background: #ffffff;
+  padding: 60px 0;
+  border-bottom: 1px solid var(--corp-color-border);
+}
+
+.corp-stats-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  text-align: center;
+}
+
+.corp-stat-card h3 {
+  font-size: 2.8rem;
+  color: var(--corp-color-primary);
+  margin-bottom: 4px;
+}
+
+.corp-stat-card p {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--corp-color-muted);
+}
+
+/* About Section */
+.corp-about {
+  padding: 100px 0;
+  border-bottom: 1px solid var(--corp-color-border);
+}
+
+.corp-about-grid {
+  display: grid;
+  grid-template-columns: 1.2fr 0.8fr;
+  gap: 60px;
+  align-items: center;
+}
+
+.corp-about-text h2 {
+  font-size: 2.2rem;
+  margin-bottom: 20px;
+}
+
+.corp-about-text p {
+  color: var(--corp-color-muted);
+  font-size: 0.95rem;
+  margin-bottom: 20px;
+}
+
+.corp-about-quote {
+  background: var(--corp-color-primary-light);
+  border-left: 4px solid var(--corp-color-primary);
+  padding: 30px;
+  border-radius: 0 8px 8px 0;
+}
+
+.corp-about-quote p {
+  font-size: 1.1rem;
+  font-style: italic;
+  font-weight: 500;
+  margin-bottom: 12px;
+}
+
+.corp-about-quote span {
+  font-size: 0.8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: var(--corp-color-muted);
+}
+
+/* Services Grid Section */
+.corp-services {
+  padding: 100px 0;
+  background: #fafafa;
+  border-bottom: 1px solid var(--corp-color-border);
+}
+
+.corp-section-title {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.corp-section-title h2 {
+  font-size: 2.2rem;
+}
+
+.corp-services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+}
+
+.corp-service-card {
+  background: #ffffff;
+  border: 1px solid var(--corp-color-border);
+  border-radius: 8px;
+  padding: 32px;
+  transition: all 0.3s ease;
+}
+
+.corp-service-card:hover {
+  border-color: var(--corp-color-primary);
+  transform: translateY(-4px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.02);
+}
+
+.corp-service-card .icon {
+  font-size: 2.2rem;
+  margin-bottom: 20px;
+}
+
+.corp-service-card h3 {
+  font-size: 1.2rem;
+  margin-bottom: 12px;
+}
+
+.corp-service-card p {
+  color: var(--corp-color-muted);
+  font-size: 0.9rem;
+}
+
+/* Booking Consultation form styling */
+.corp-booking {
+  padding: 100px 0;
+  background: #ffffff;
+}
+
+.corp-booking-wrapper {
+  display: grid;
+  grid-template-columns: 0.9fr 1.1fr;
+  gap: 60px;
+  align-items: center;
+}
+
+.corp-booking-info h2 {
+  font-size: 2.2rem;
+  margin-bottom: 20px;
+}
+
+.corp-booking-info p {
+  color: var(--corp-color-muted);
+  font-size: 0.95rem;
+  margin-bottom: 30px;
+}
+
+.corp-quick-contacts {
+  font-weight: 600;
+  font-size: 0.9rem;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.corp-quick-contacts a {
+  color: var(--corp-color-primary);
+}
+
+.corp-form {
+  background: #ffffff;
+  border: 1px solid var(--corp-color-border);
+  border-radius: 8px;
+  padding: 40px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.02);
+}
+
+.form-group-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.corp-group {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  margin-bottom: 20px;
+}
+
+.corp-group label {
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: var(--corp-color-muted);
+}
+
+.corp-group input, .corp-group select, .corp-group textarea {
+  padding: 12px 14px;
+  border: 1px solid var(--corp-color-border);
+  border-radius: 6px;
+  font-family: var(--corp-font-main);
+  font-size: 0.85rem;
+  background: #fafafa;
+}
+
+.corp-group input:focus, .corp-group select:focus, .corp-group textarea:focus {
+  outline: none;
+  border-color: var(--corp-color-primary);
+  background: #ffffff;
+}
+
+/* Footer styling */
+.corp-footer {
+  background: #0f0c1b;
+  color: #a0aec0;
+  padding: 40px 0;
+  font-size: 0.85rem;
+  border-top: 1px solid #1a1530;
+}
+
+.corp-footer-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.corp-footer-links {
+  display: flex;
+  gap: 20px;
+  color: white;
+}
+
+.corp-footer-links a:hover {
+  color: var(--corp-color-primary);
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+  .corp-booking-wrapper, .corp-about-grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+}
+
+@media (max-width: 768px) {
+  .corp-header .corp-container {
+    flex-direction: column;
+    gap: 12px;
+  }
+  .corp-nav {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 16px;
+  }
+  .corp-header-actions {
+    width: 100%;
+    justify-content: center;
+  }
+  .corp-hero-content h1 {
+    font-size: 2.4rem;
+  }
+  .corp-stats-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  .form-group-row {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+  .corp-footer-wrapper {
+    flex-direction: column;
+    gap: 16px;
+    text-align: center;
+  }
+}
